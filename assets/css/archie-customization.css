@@ -20,16 +20,32 @@ nav {
 }
 
 footer {
-  justify-content: space-between;
+  display: block;
+
+  .main {
+    display: flex;
+    width: 100%;
+    gap: 12px;
+    justify-content: space-between;
+  }
+
+  .footer-socials {
+    display: flex;
+  }
+
+  .footer-nav {
+    display: flex;
+    justify-content: end;
+    margin-top: 12px;
+  }
 }
 
 @media (max-width: 768px) {
-  footer {
+  footer .main {
     flex-direction: column;
   }
 
   .footer-info {
-    text-align: center;
     margin-top: 8px;
   }
 
@@ -39,5 +55,9 @@ footer {
 
   .footer-info > .seperator {
     display: none;
+  }
+
+  .footer-nav {
+    justify-content: center;
   }
 }

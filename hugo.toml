@@ -28,6 +28,12 @@ pygmentscodefencesguesssyntax = true
     url = "/posts/"
     weight = 3
 
+  [[menu.footer]]
+    identifier = "legal"
+    name = "Legal"
+    url = "/legal/"
+    weight = 1
+
 [params]
     mode = "auto" # dark, light, toggle, auto
     customcss = ["css/archie-customization.css"]
@@ -50,6 +56,11 @@ pygmentscodefencesguesssyntax = true
     name = "Twitter"
     icon = "twitter"
     url = "https://twitter.com/mammuth0/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [caches]
   [caches.images]
