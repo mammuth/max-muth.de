@@ -1,0 +1,40 @@
+:root {
+  --maincolor: #ff8f00;
+  --darkMaincolor: #ff8f00;
+  --hovercolor: #3800ff;
+  --bordercl: #3800ff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  line-height: 1.5;
+}
+
+#dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+footer {
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+
+  .footer-info {
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .footer-info > .copyright {
+    display: block;
+    margin-top: 8px;
+  }
+}

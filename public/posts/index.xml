@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Max Muth&#39;s Webblog</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Max Muth&#39;s Webblog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© Maximilian Muth</copyright>
+    <lastBuildDate>Fri, 04 Jul 2025 18:18:25 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Post</title>
+      <link>http://localhost:1313/posts/first-post/</link>
+      <pubDate>Fri, 04 Jul 2025 18:18:25 +0200</pubDate>
+      <guid>http://localhost:1313/posts/first-post/</guid>
+      <description>&lt;p&gt;fancy content&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

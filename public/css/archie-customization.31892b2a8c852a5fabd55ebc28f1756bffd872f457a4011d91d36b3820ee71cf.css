@@ -1,0 +1,22 @@
+:root {
+  --maincolor: #3498db;
+--darkMaincolor: #2980b9;
+  --textcolor: #333;
+  --backgroundcolor: #f4f4f4;
+  --darkTextColor: #f4f4f4;
+  --darkBackgroundColor: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.5;
+}
+
+#dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}

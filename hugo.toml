@@ -1,0 +1,52 @@
+baseURL = 'https://max-muth.de/'
+languageCode = 'en-us'
+title = "Max Muth's Webblog"
+theme = "archie"
+copyright = "© Maximilian Muth"
+
+# Code Highlight
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Blog"
+    url = "/posts/"
+    weight = 3
+
+[params]
+    mode = "auto" # dark, light, toggle, auto
+    customcss = ["css/archie-customization.css"]
+    useCDN = false # don't use CDNs for fonts and icons, instead serve them locally.
+	# subtitle = "Personal webblog of Max Muth"
+	mathjax = false
+	katex = false
+
+    [[params.social]]
+    name = "Linkedin"
+    icon = "linkedin"
+    url = "https://www.linkedin.com/in/maxmuth/"
+
+    [[params.social]]
+    name = "GitHub"
+    icon = "github"
+    url = "https://github.com/mammuth"
+
+    [[params.social]]
+    name = "Twitter"
+    icon = "twitter"
+    url = "https://twitter.com/mammuth0/"

@@ -1,0 +1,26 @@
+<footer>
+  <div style="display:flex">
+    {{- $socials := .Site.Params.Social -}}
+    {{- range $index, $key := $socials -}}
+      {{- if hasPrefix $key.icon "simple:" -}}
+        <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}">
+          <i class="si si-{{ substr $key.icon 7 }}"></i>
+        </a>
+      {{- else -}}
+        <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}">
+          {{ template "feathericon" (dict "Icon" $key.icon "UseCDN" .Site.Params.useCDN) }}
+        </a>
+      {{- end -}}
+
+      {{- if lt $index (sub (len $socials) 1) -}}
+        <span style="margin: 0 0.5em;">|</span>
+      {{- end -}}
+    {{- end -}}
+  </div>
+  <div class="footer-info">
+    Proudly served as static HTML <span class="seperator">|</span> <span class="copyright">{{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }}{{ end }}</span>
+  </div>
+</footer>
+{{ if not hugo.IsServer }}
+{{ template "_internal/google_analytics.html" . }}
+{{ end }}

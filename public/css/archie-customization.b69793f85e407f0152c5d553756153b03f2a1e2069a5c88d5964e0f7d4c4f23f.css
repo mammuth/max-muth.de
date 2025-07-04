@@ -1,0 +1,20 @@
+:root {
+  --maincolor: #3498db;
+  --secondary-color: #2ecc71;
+  --spacing-unit: 10px;
+  --max-width: 1200px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.5;
+}
+
+#dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
