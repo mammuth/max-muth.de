@@ -40,6 +40,11 @@ footer {
   }
 }
 
+code {
+  padding: 0 0.2em;
+  font-family: Roboto Mono;
+}
+
 @media (max-width: 768px) {
   footer .main {
     flex-direction: column;
