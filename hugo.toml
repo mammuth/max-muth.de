@@ -37,7 +37,7 @@ pygmentscodefencesguesssyntax = true
 [params]
     mode = "auto" # dark, light, toggle, auto
     customcss = ["css/archie-customization.css"]
-    useCDN = false # don't use CDNs for fonts and icons, instead serve them locally.
+    useCDN = true # don't use CDNs for fonts and icons, instead serve them locally.
 	# subtitle = "Personal webblog of Max Muth"
 	mathjax = false
 	katex = false
