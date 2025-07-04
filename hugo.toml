@@ -50,3 +50,7 @@ pygmentscodefencesguesssyntax = true
     name = "Twitter"
     icon = "twitter"
     url = "https://twitter.com/mammuth0/"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
