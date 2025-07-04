@@ -2,4 +2,4 @@
 
 Built with hugo and served as static HTML.
 
-Visit it at [https://max-muth.de]
+Visit it at [https://max-muth.de](https://max-muth.de)
