@@ -5,8 +5,7 @@
   --bordercl: #3800ff;
 }
 
-body,
-p {
+main.index p {
   font-family: "Roboto Mono", monospace;
 }
 
