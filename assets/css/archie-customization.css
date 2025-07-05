@@ -5,6 +5,11 @@
   --bordercl: #3800ff;
 }
 
+body,
+p {
+  font-family: "Roboto Mono", monospace;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -64,5 +69,12 @@ code {
 
   .footer-nav {
     justify-content: center;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  ::selection {
+    background-color: var(--hovercolor);
+    color: #fff;
   }
 }
