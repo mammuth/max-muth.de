@@ -1,6 +1,6 @@
 baseURL = 'https://max-muth.de/'
 languageCode = 'en-us'
-title = "Max Muth's Webblog"
+title = "Max Muth"
 theme = "archie"
 copyright = "© Maximilian Muth"
 
@@ -37,8 +37,8 @@ pygmentscodefencesguesssyntax = true
 [params]
     mode = "auto" # dark, light, toggle, auto
     customcss = ["css/archie-customization.css"]
-    useCDN = true # don't use CDNs for fonts and icons, instead serve them locally.
-	# subtitle = "Personal webblog of Max Muth"
+    useCDN = false # don't use CDNs for fonts and icons, instead serve them locally (eg. svg/feather-sprite.svg)
+	  # subtitle = "Personal webblog of Max Muth"
 	mathjax = false
 	katex = false
 
@@ -56,6 +56,12 @@ pygmentscodefencesguesssyntax = true
     name = "Twitter"
     icon = "twitter"
     url = "https://twitter.com/mammuth0/"
+
+
+    # [[params.social]]
+    # name = "Mastodon"
+    # icon = "mastodon"
+    # url = "https://mastodon.social/@mammuth0"
 
 [markup]
   [markup.goldmark]
