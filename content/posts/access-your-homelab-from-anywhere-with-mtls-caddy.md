@@ -1,6 +1,7 @@
 +++
 date = '2025-06-15'
 title = 'Securely Access Your Homelab From Anywhere With mTLS & Caddy'
+author = "Max Muth"
 tags = ['self-hosting', 'homelab']
 +++
 

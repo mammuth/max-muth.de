@@ -1,6 +1,7 @@
 baseURL = 'https://max-muth.de/'
 languageCode = 'en-us'
 title = "Max Muth"
+description = "🦣 Personal website and blog of Maximilian Muth, a Software Engineer from Munich, Germany."
 theme = "archie"
 copyright = "© Maximilian Muth"
 
@@ -17,16 +18,10 @@ pygmentscodefencesguesssyntax = true
     weight = 1
 
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 2
-
-  [[menu.main]]
     identifier = "posts"
     name = "Blog"
     url = "/posts/"
-    weight = 3
+    weight = 2
 
   [[menu.footer]]
     identifier = "legal"
@@ -39,8 +34,9 @@ pygmentscodefencesguesssyntax = true
     customcss = ["css/archie-customization.css"]
     useCDN = false # don't use CDNs for fonts and icons, instead serve them locally (eg. svg/feather-sprite.svg)
 	  # subtitle = "Personal webblog of Max Muth"
-	mathjax = false
-	katex = false
+    mathjax = false
+    katex = false
+    mainSections = [] # defaults to ["post"] otherwise and gets rendered on the homepage
 
     [[params.social]]
     name = "Linkedin"
