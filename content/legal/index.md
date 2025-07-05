@@ -8,4 +8,4 @@ This website doesn't process or store any personal information. Web server logs 
 
 ## Imprint
 
-<img src="/images/imprint.jpg" style="width: 100%; height: auto;" alt="Imprint">
+![Imprint](imprint.jpg)
