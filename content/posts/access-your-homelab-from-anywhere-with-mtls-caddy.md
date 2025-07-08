@@ -25,13 +25,13 @@ Because once you've set up your devices, you never have to think about it again.
 
 mTLS works nicely when accessing your services through browsers. However, some services bring their own desktop or mobile apps, which _may_ not have mTLS support implemented.
 
-Common apps that _do_ support mTLS in their native apps at the time of writing:
+Common native apps that _do_ support mTLS in their native apps at the time of writing:
 
 - Immich
 - Vaultwarden
 - Nextcloud
 
-Common apps that do not support it:
+Common native apps that do not support it:
 
 - Jellyfin
 
