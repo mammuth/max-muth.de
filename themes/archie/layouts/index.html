@@ -11,6 +11,10 @@
 					<p>{{ .Site.Params.Subtitle | .Page.RenderString }}</p>
 					{{- end -}}
 				</div>
+
+				{{ $profilePhoto := resources.Get "images/max-muth.png" }}
+				<img src="{{ $profilePhoto.RelPermalink }}" class="profile-photo" alt="Max Muth profile photo" />
+				
 				{{ .Content }}
 				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}

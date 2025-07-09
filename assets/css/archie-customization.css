@@ -53,6 +53,12 @@ code {
   font-family: Roboto Mono;
 }
 
+.profile-photo {
+  border: none;
+  width: 150px;
+  margin: 24px 0 12px;
+}
+
 @media (max-width: 768px) {
   footer .main {
     flex-direction: column;
