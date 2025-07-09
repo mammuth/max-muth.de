@@ -9,7 +9,7 @@ Personally, I see two main reasons why someone would want to run their own AdGua
 - Block ads & trackers on any devices (eg TVs) in your home network
 - Encrypt your DNS queries (it's 2025 after all)
 
-But here's the thing: ideally, you benefit from both of these advantages when being on the go with your phone. This is especially true because you might spend more time in networks you don't trust that much (but don't want to bother with running an always-on-VPN).
+But here's the thing: ideally, you also benefit from both of these advantages when being on the go with your phone. This is especially true because you might spend more time in networks you don't trust that much (but don't want to bother with running an always-on-VPN).
 
 Luckily, Android makes this easy with their "private DNS" setting — something you still can't do out-of-the-box on macOS... (Windows 11 brought support for DoH)
 
