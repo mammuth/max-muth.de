@@ -1,7 +1,12 @@
 function setTheme(mode) {
   localStorage.setItem("theme-storage", mode);
+
+  document.documentElement.classList.remove("light", "dark");
+  document.documentElement.classList.add(mode);
+
   var e = document.querySelector("#dark-mode-toggle > .feather > use");
   const styleLink = document.getElementById("darkModeStyle");
+
   if (mode === "dark") {
     styleLink.disabled = false;
     styleLink.media = "all";
@@ -21,5 +26,9 @@ function toggleTheme() {
   }
 }
 
-var savedTheme = localStorage.getItem("theme-storage") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+var savedTheme =
+  localStorage.getItem("theme-storage") ||
+  (window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light");
 setTheme(savedTheme);

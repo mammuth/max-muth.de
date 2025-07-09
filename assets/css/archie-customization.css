@@ -75,9 +75,9 @@ code {
   }
 }
 
-@media (prefers-color-scheme: dark) {
+html.dark {
   ::selection {
-    background-color: var(--hovercolor);
+    background-color: var(--hovercolor) !important;
     color: #fff;
   }
 }
