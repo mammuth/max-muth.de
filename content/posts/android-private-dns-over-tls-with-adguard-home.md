@@ -70,11 +70,33 @@ In your AdGuard web UI, go to Settings > Encryption settings and check "Enable E
 
 Scroll down and provide the path to the TLS certificate and key.
 
-### Configure your router & phone
+### Configure your router
 
 As mentioned, DNS over TLS uses port 853 (instead of port 53 like the plaintext DNS), so you'll want to forward that port from your router to your AdGuard host.
 
-### Hardening
+### Hardening – Only Allow Your Own Clients
+
+Theoretically, you can already start using your AdGuard server via DNS over TLS (DoT). However, since it’s a public instance, any client can connect to it. In fact, you’ll notice this happening quickly if you check your logs.
+
+To prevent unwanted use, you should whitelist the clients that are allowed to access your DNS server.
+
+We want to allow two types of clients:
+- All clients inside our local network
+- Our Android phones
+
+Fortunately, AdGuard makes it possible to whitelist both. For any DoT clients (like Android’s Private DNS), AdGuard treats any subdomain before your main DNS hostname as the [Client ID](https://github.com/AdguardTeam/AdGuardHome/wiki/Clients#clientid).
+
+For example, if your DNS hostname is `dns.example.org`, you can configure Android Private DNS to connect to `phone-max-0f39b535.dns.example.org`. Requests from that phone will automatically be grouped under the client ID `phone-max-0f39b535`, which you can then whitelist.
+
+It’s up to you whether you assign unique identifiers per device or reuse them. In either case, I recommend choosing identifiers that aren’t easily guessable or brute-forceable.
+
+Now go to `AdGuard Settings > DNS > Access settings` and enter the client IDs you’ve defined. For your local network, whitelist its CIDR range, e.g., `192.168.0.0/16` (or whatever matches your network topology).
+
+Things to keep in mind:
+- Your TLS certificate must be a wildcard certificate for `*.dns.example.org`.
+- Your DNS records must resolve all subdomains to your AdGuard Home server’s IP.
+
+### Hardening – VM
 
 Since you now exposed your AdGuard instance _publicly on the internet_, make sure to follow some basic hardening best practices.
 
