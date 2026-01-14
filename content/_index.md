@@ -15,7 +15,7 @@ You can reach out to me on:
 
 - LinkedIn: [maxmuth](https://linkedin.com/in/maxmuth)
 - GitHub: [mammuth](https://github.com/mammuth)
-- Mastodon: [@mammuth](https://mastodon.social/@mammuth0)
+- Mastodon: [@mammuth0](https://mastodon.social/@mammuth0)
 - X: [@mammuth0](https://x.com/mammuth)
 - Goodreads: [maxmuth](https://www.goodreads.com/user/show/54988140-max)
 - Email: <a href="mailto:hello@maxi-muth.de">hello@maxi-muth.de</a>
