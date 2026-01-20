@@ -7,6 +7,14 @@
           <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}">
             <i class="si si-{{ substr $key.icon 7 }}"></i>
           </a>
+        {{- else if hasPrefix $key.icon "svg:" -}}
+          {{- $svgPath := printf "svg/%s.svg" (substr $key.icon 4) -}}
+          {{- $svg := resources.Get $svgPath -}}
+          <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}">
+            {{- if $svg -}}
+              {{ $svg.Content | safeHTML }}
+            {{- end -}}
+          </a>
         {{- else -}}
           <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}">
             {{ template "feathericon" (dict "Icon" $key.icon "UseCDN" .Site.Params.useCDN) }}

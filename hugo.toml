@@ -54,10 +54,10 @@ pygmentscodefencesguesssyntax = true
     url = "https://twitter.com/mammuth0/"
 
 
-    # [[params.social]]
-    # name = "Mastodon"
-    # icon = "mastodon"
-    # url = "https://mastodon.social/@mammuth0"
+    [[params.social]]
+    name = "Mastodon"
+    icon = "svg:mastodon"
+    url = "https://mastodon.social/@mammuth0"
 
 [markup]
   [markup.goldmark]
