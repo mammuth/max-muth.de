@@ -18,4 +18,4 @@ You can reach out to me on:
 - Mastodon: <a rel="me" href="https://mastodon.social/@mammuth0">Mastodon</a> 
 - X: [@mammuth0](https://x.com/mammuth)
 - Goodreads: [maxmuth](https://www.goodreads.com/user/show/54988140-max)
-- Email: <a href="mailto:hello@maxi-muth.de">hello@maxi-muth.de</a>
+- Email: <a href="mailto:hello@max-muth.de">hello@max-muth.de</a>, <a href="/files/pgp-hello-at-max-muth-de.asc">PGP</a>
