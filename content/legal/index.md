@@ -6,7 +6,9 @@ title = 'Legal'
 
 This website doesn't process or store any personal information. Web server logs don't persist IP addresses.
 
-For understanding basic visitor numbers, I'm using the open-source project [umami](https://github.com/umami-software/umami). The data is hosted in the EU by [Umami Cloud](https://umami.is/)—see their [privacy policy](https://umami.is/privacy) for more information.
+For understanding basic visitor numbers, I'm using a self-hosted instance of [Rybbit](https://github.com/rybbit-io/rybbit), an open-source analytics project.
+
+The setup is privacy-focused: it doesn't store IP addresses and uses a daily rotating salt for visitor identifiers.
 
 ## Imprint
 
