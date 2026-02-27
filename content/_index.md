@@ -5,7 +5,7 @@ author = "Max Muth"
 +++
 
 Hi there 👋
-I'm Max, Software Engineer living in Munich, Germany. 🇩🇪
+I'm Max, Software Engineer living in Germany. 🇩🇪 🇪🇺
 
 Stuff I work with: Full-Stack Web (Rails, Django, Go) | Generative AI & LLMs | Cloud & DevOps.
 
