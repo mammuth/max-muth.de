@@ -1,6 +1,6 @@
 +++
 date = '2025-12-16'
-title = 'Inject SSH keys into LXS when using Proxmox Helper Scripts'
+title = 'Inject SSH keys into LXCs when using Proxmox Helper Scripts'
 author = "Max Muth"
 tags = ['self-hosting', 'homelab', 'proxmox']
 +++
